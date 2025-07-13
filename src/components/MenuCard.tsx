@@ -1,4 +1,5 @@
 import { MenuItem } from '../data/menuData';
+import Image from 'next/image';
 
 interface MenuCardProps {
   item: MenuItem;
@@ -9,9 +10,11 @@ const MenuCard = ({ item }: MenuCardProps) => {
     <div className="bg-white/5 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform group border border-white/10 hover:border-yellow-500/30 h-full flex flex-col">
       {/* Image Container */}
       <div className="relative h-32 sm:h-36 md:h-40 overflow-hidden">
-        <img
+        <Image
           src={item.image}
           alt={item.name}
+          width={400}
+          height={300}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
 

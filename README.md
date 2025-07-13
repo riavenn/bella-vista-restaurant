@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bella Vista Fast Food Restaurant
 
-## Getting Started
+Modern ve responsive bir fast food restaurant web sitesi. Next.js, TypeScript ve TailwindCSS kullanılarak geliştirilmiştir.
 
-First, run the development server:
+## 🚀 Özellikler
 
+- **Responsive Tasarım**: Tüm cihazlarda mükemmel görünüm
+- **Modern UI/UX**: TailwindCSS ile şık ve kullanıcı dostu arayüz
+- **Menü Sistemi**: Kategorilere ayrılmış menü ve sayfalama
+- **Sipariş Sistemi**: Telefon ve popüler uygulamalar üzerinden sipariş
+- **Galeri**: Resim galerisi ve öne çıkan ürünler
+- **İletişim**: Footer'da iletişim bilgileri ve sosyal medya linkleri
+- **Accessibility**: Erişilebilirlik standartlarına uygun
+
+## 🛠️ Teknolojiler
+
+- **Next.js 15.3.5** - React framework
+- **TypeScript** - Type safety
+- **TailwindCSS 4** - Utility-first CSS framework
+- **React 19** - UI library
+
+## 📦 Kurulum
+
+1. Projeyi klonlayın:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd fast-food-restaurant
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Environment variables dosyasını oluşturun:
+```bash
+cp .env.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Development server'ı başlatın:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Build ve Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Production Build
+```bash
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Vercel'e Deploy
+1. [Vercel](https://vercel.com) hesabınıza giriş yapın
+2. Projeyi import edin
+3. Environment variables'ları ayarlayın
+4. Deploy edin
 
-## Deploy on Vercel
+### Netlify'a Deploy
+1. [Netlify](https://netlify.com) hesabınıza giriş yapın
+2. Projeyi drag & drop ile yükleyin veya Git'ten import edin
+3. Build command: `npm run build`
+4. Publish directory: `.next`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Proje Yapısı
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Ana sayfa
+├── components/         # React bileşenleri
+│   ├── About.tsx
+│   ├── FeaturedCard.tsx
+│   ├── FeaturedSection.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── ImageGallery.tsx
+│   ├── MenuCard.tsx
+│   ├── MenuSection.tsx
+│   ├── Navbar.tsx
+│   └── OrderSection.tsx
+└── data/               # Veri dosyaları
+    └── menuData.ts
+```
+
+## 🎨 Özelleştirme
+
+- **Renkler**: `src/app/globals.css` dosyasından ana renkleri değiştirebilirsiniz
+- **Menü**: `src/data/menuData.ts` dosyasından menü öğelerini düzenleyebilirsiniz
+- **İletişim**: `src/components/Footer.tsx` dosyasından iletişim bilgilerini güncelleyebilirsiniz
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 640px
+- **Tablet**: 640px - 1024px
+- **Desktop**: > 1024px
+
+## 🤝 Katkıda Bulunma
+
+1. Fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Commit edin (`git commit -m 'Add amazing feature'`)
+4. Push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.

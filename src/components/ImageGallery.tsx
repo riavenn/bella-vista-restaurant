@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const ImageGallery = () => {
   const galleryImages = [
     {
@@ -62,9 +64,7 @@ const ImageGallery = () => {
     }
   ];
 
-  const getSizeClass = (size: string) => {
-    return "col-span-1 row-span-1";
-  };
+
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative">
@@ -91,9 +91,11 @@ const ImageGallery = () => {
               key={image.id}
               className="group relative overflow-hidden cursor-pointer aspect-square rounded-lg"
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
+                width={400}
+                height={300}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               {/* Hover Overlay */}

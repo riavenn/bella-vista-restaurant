@@ -1,4 +1,5 @@
 import { MenuItem } from '../data/menuData';
+import Image from 'next/image';
 
 interface FeaturedCardProps {
   item: MenuItem;
@@ -20,9 +21,11 @@ const FeaturedCard = ({ item }: FeaturedCardProps) => {
 
       {/* Image Container */}
       <div className="relative h-40 sm:h-44 md:h-48 overflow-hidden rounded-t-2xl mt-2 sm:mt-0">
-        <img
+        <Image
           src={item.image}
           alt={item.name}
+          width={400}
+          height={300}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
 
