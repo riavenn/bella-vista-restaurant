@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="8" fill="#F27A1A"/>
+  <circle cx="32" cy="22" r="8" fill="white"/>
+  <path d="M32 14l-3 6h6l-3-6z" fill="#F27A1A"/>
+  <rect x="24" y="32" width="16" height="8" rx="2" fill="white"/>
+  <path d="M28 36h8v2h-8v-2z" fill="#F27A1A"/>
+  <circle cx="28" cy="48" r="3" fill="white"/>
+  <circle cx="36" cy="48" r="3" fill="white"/>
+  <path d="M28 46h8v4h-8v-4z" fill="#F27A1A"/>
+  <text x="32" y="58" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="5" font-weight="bold">TRENDYOL</text>
+</svg>

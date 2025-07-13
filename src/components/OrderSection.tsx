@@ -88,7 +88,7 @@ const OrderSection = () => {
       return (
         <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
           <Image
-            src="https://kurumsal.yemeksepeti.com/wp-content/uploads/2023/11/Yemeksepeti-2.jpg"
+            src="/yemeksepeti-logo.svg"
             alt="Yemeksepeti Logo"
             width={64}
             height={64}
@@ -101,7 +101,7 @@ const OrderSection = () => {
       return (
         <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
           <Image
-            src="https://logowik.com/content/uploads/images/getir3303.jpg"
+            src="/getir-logo.svg"
             alt="Getir Yemek Logo"
             width={64}
             height={64}
@@ -114,7 +114,7 @@ const OrderSection = () => {
       return (
         <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
           <Image
-            src="https://images.seeklogo.com/logo-png/45/1/migros-yemek-logo-png_seeklogo-454008.png"
+            src="/migros-logo.svg"
             alt="Migros Yemek Logo"
             width={64}
             height={64}
@@ -127,7 +127,7 @@ const OrderSection = () => {
       return (
         <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
           <Image
-            src="https://images.seeklogo.com/logo-png/43/1/trendyol-yemek-logo-png_seeklogo-431558.png"
+            src="/trendyol-logo.svg"
             alt="Trendyol Yemek Logo"
             width={64}
             height={64}
